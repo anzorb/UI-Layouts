@@ -16,3 +16,12 @@ all and (max-height:495px) and (width: 1280px) /* landscape */
 		display:none;
 	}
 }
+
+/* detect BlackBerry Q10 and make header and footer shorter for more screen estate  */
+@media all and (width:720px) and (height: 720px)
+{
+    header,
+    footer{
+            height: 90px;
+    }     
+}
