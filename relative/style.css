@@ -1,0 +1,30 @@
+#App,body,html{
+	position: fixed;
+	left:0;right:0;
+	top:0;bottom:0;
+	background: #181818;
+	margin:0;
+}
+
+/* set your container's display to -webkit-box */
+#App{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-align: stretch;
+}
+
+/* setting contents flexibility to 1, ensures that it stretches to fill available space */
+#content{
+	-webkit-box-flex: 1;
+	width:100%;
+	background:#181818;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+/* fixed heights for header and footer. They don't need to be when using flex-box */
+header,footer{
+	background:#bbbbbb;
+	height:120px;
+	width:100%;
+}
