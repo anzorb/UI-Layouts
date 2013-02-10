@@ -1,0 +1,66 @@
+/* common properties */
+
+*{
+	color: white;
+	font-size:34px;
+}
+ul{
+	margin:0;
+	padding:0;
+	list-style: none;
+	width:100%;
+}
+
+li {
+	left:0;right:0;
+	padding-left:20px;
+	line-height:120px;
+	height:120px;
+	border-bottom:1px solid #555;
+}
+li: first-child{
+	border-top:1px solid #555;
+}
+
+input,button{
+	font-size: 40px;
+	padding: 10px;
+	color:#111;
+
+}
+
+button {
+	padding:50px;
+}
+
+h1{
+	font-size:50px;
+	color:#111;
+	padding-left:20px;
+	/*line-height:120px;*/
+}
+
+/* -Search bar-
+ * I left the flex-box stuff that positions the 
+ * input field and button so it stretches nicely. 
+ * This is a good example of why flex-box rocks 
+ */
+
+#search-bar{
+	padding:20px;
+	left:0;right:0;
+	background: #eee;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+}
+
+#search-btn {
+	width:200px;
+	margin-left:10px;	
+}
+
+#search-query{
+	display:block;
+	-webkit-box-flex: 1;
+}
+
