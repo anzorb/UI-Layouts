@@ -1,0 +1,18 @@
+/* in landscape, make the footer smaller, to allow for more content */
+@media all and (orientation:landscape) and (width:1280px){
+
+    header,footer{
+		height:90px;
+	}
+}
+
+/* detect virtual keyboard and hide header and footer */
+@media 
+all and (max-height:867px) and (width: 768px), /* portrait 1280x768 */
+all and (max-height:447px) and (width: 720px), /* portrait 1280x720 */
+all and (max-height:495px) and (width: 1280px) /* landscape */
+{
+    header,footer{
+		display:none;
+	}
+}
