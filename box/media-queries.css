@@ -6,16 +6,6 @@
 	}
 }
 
-/* detect virtual keyboard and hide header and footer */
-@media 
-all and (max-height:867px) and (width: 768px), /* portrait 1280x768 */
-all and (max-height:447px) and (width: 720px), /* portrait 1280x720 */
-all and (max-height:495px) and (width: 1280px) /* landscape */
-{
-    header,footer{
-		display:none;
-	}
-}
 
 /* detect BlackBerry Q10 and make header and footer shorter for more screen estate  */
 @media all and (width:720px) and (height: 720px)
@@ -24,4 +14,14 @@ all and (max-height:495px) and (width: 1280px) /* landscape */
     footer{
             height: 90px;
     }     
+}
+
+/* hide header and footer when available height is too short*/ 
+@media 
+all and (max-height:870px) and (max-width: 768px), /* portrait 1280x720 and 1280x768 */
+all and (max-height:450px) and (width: 1280px) /* landscape */
+{
+    header,footer{
+		display:none;
+	}
 }

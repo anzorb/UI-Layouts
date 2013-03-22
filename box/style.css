@@ -1,4 +1,4 @@
-#App,body,html{
+body,html{
 	position: fixed;
 	left:0;right:0;
 	top:0;bottom:0;
@@ -7,14 +7,16 @@
 }
 
 /* set your container's display to -webkit-box */
-#App{
+.container{
+	width:100%;
+	height:100%;
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
-	-webkit-box-align: stretch;
+	-webkit-box-align: stretch;	
 }
 
 /* setting contents flexibility to 1, ensures that it stretches to fill available space */
-#content{
+.content{
 	-webkit-box-flex: 1;
 	width:100%;
 	background:#181818;

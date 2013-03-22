@@ -12,5 +12,5 @@
 	<feature id="blackberry.app">
     	<param name="backgroundColor" value="0xff181818" />
 	</feature>
-	<content src="relative\index.html"></content>
+	<content src="box\index.html"></content>
 </widget>
